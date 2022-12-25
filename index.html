@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800&family=Rubik+80s+Fade&family=Rubik+Microbe&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;800&family=Orbitron:wght@400;500;800&family=Rubik+80s+Fade&family=Rubik+Microbe&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Challange Project</title>
+        <h1>Website Design System</h1>
+  </head>
+
+  <body>
+    <section>
+      <article>
+        <h2>HTML</h2>
+          <h3><code>&lt;target&gt;</code> Target Attribute</h3>
+            <p>The target attribute on an <code>&lt;a&gt;</code> anchor element specifies where a hyperlink should be opened. A target value of <code>"_blank"</code> will tell the browser to open the hyperlink in a new tab in modern browsers, or in a new window in older browsers or if the browser has had settings changed to open hyperlinks in a new window.</p>
+          <h3><code>colspan</code> and <code>rowspan</code> Attribute</h3>
+            <p>These attribute on a table header or table data element indicates how many rows or columns that particular cell should span within the table.</p>
+          <h3>Embedding Media</h3>
+            <p>Semantic HTML introduces us to <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code> and <code>&lt;embed&gt;</code>. <code>&lt;video&gt;</code> allows us to add videos to our website. <code>&lt;audio&gt;</code> allows us to implement audio into our website. <code>&lt;embed&gt;</code> can be used to implement any type of media. These elements are universal in that they all use the src attribute to link the source of the content. <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> requires a closing tag while <code>&lt;embed&gt;</code> is a self-closing tag.</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>CSS</h2>
+          <h3>Selectors</h3>
+            <h4>Class and ID Selectors</h4>
+              <p>Class selectors are denoted with a period <code>.</code> followed by the class name. <u>CSS ID selectors should be unique and used to style only a single element. </u>CSS ID selectors are denoted with a hash sign <code>#</code> followed by the id name.</p>
+            <h4>Selector Specifity</h4>
+              <p>Specificity is a ranking system that is used when there are multiple conflicting property values that point to the same element. When determining which rule to apply, the selector with the highest specificity wins out. The most specific selector type is the ID selector, followed by class selectors, followed by type selectors</p>
+          <h3>The Box Model</h3>
+            <h4>The property box-sizing of CSS box model</h4>
+              <p>The CSS <i>box model</i> is a box that wraps around an HTML element and controls the design and layout. The property <code>box-sizing</code> controls which aspect of the box is determined by the height and width properties. The default value of this property is <code>content-box</code>, which renders the actual size of the element including the content box; but not the paddings and borders. The value <code>border-box</code>, on the other hand, renders the actual size of an element including the content box, paddings, and borders.</p>
+              <p>The value <code>border-box</code> of the <code>box-sizing</code> property for an element corresponds directly to the element’s total rendered size, including padding and border with the <code>height</code> and <code>width</code> properties.<br>The default value of the <code>border-box</code> property is content-box. The value <code>border-box</code> is recommended when it is necessary to resize the <code>padding</code> and border but not just the content.</p>
+          <h3>Display and Positioning</h3>
+            <h4>CSS z-index property</h4>        
+              <p>The CSS <code>z-index</code>property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.<br>The <code>z-index</code> property uses integer values, which can be positive or negative values. The element with the highest z-index value will be at the foreground, while the element with the lowest z-index value will be at the back.</p>
+            <h4>Fixed CSS Positioning</h4>
+              <p>Positioning in CSS provides designers and developers options for positioning HTML elements on a web page. The CSS <code>position</code> can be set to <code>static</code>, <code>relative</code>, <code>absolute</code> or <code>fixed</code>. When the CSS position has a value of <code>fixed</code>, it is set/pinned to a specific spot on a page. The fixed element stays the same regardless of scrolling.</p>
+          <h3>Colors</h3>
+            <h4>CSS rgb() Colors</h4>
+              <p>CSS colors can be declared with RGB colors using <code>rgb()</code> syntax.<br><code>rgb()</code> should be supplied with three values representing red, green, and blue. These values range can from 0 to 255.</p>
+              <p class="rgb">This text is an example of RGB.</p>
+            <h4>CSS HSL Colors</h4>
+              <p>CSS colors can be declared with the HSL color system using <code>hsl()</code> syntax. This syntax contains three values: <i>hue</i> (the color value itself), <i>saturation</i> (intensity), and <i>lightness</i>.<br>Hue values range from 0 to 360 while saturation and lightness values are represented as percentages.</p>
+              <p class="hsl">This text is an example of HSL.</p>
+            <h4>CSS Hexadecimal Colors</h4>
+              <p>CSS colors can be represented in hexadecimal (or hex) notation. Hexadecimal digits can represent sixteen different values using <code>0</code> - <code>9</code> and <code>a</code> - <code>f</code>.<br>Hexadecimal colors are composed of 6 characters–each group of two represents a value between 0 and 255 for red, green, or blue.</p>
+              <p class="hexadecimal">This Text is an example of Hexadecimal Colors.</p>
+            <h4>CSS Color Alpha Values</h4>
+              <p><i>Alpha values</i> determine the transparency of colors in CSS. Alpha values can be set for both RGB and HSL colors by using <code>rgba()</code> and <code>hsla()</code> and providing a fourth value representing alpha. Alpha values can range between <code>0.0</code> (totally transparent) and <code>1.0</code> (totally opaque).<br>The CSS <code>transparent</code> value can also be used to create a fully transparent element.</p>
+              <p class="alpha">This Text is an example of Alpha Colors.</p>
+          <h3>Typography</h3>
+            <h4>CSS <i>Linking fonts</i></h4>
+              <p><i>Linking fonts</i> allow user to use web fonts in the document. They can be imported in an HTML document by using the <code>&lt;link&gt;</code> tag. Once the web font URL is placed within the href attribute, the imported font can then be used in CSS declaration.</p>
+            <h4>CSS @font-face rule</h4>
+              <p>The CSS <i>@font-face</i> rule allows external fonts or font files to be imported directly into stylesheets.The location of the font file must be specified in the CSS rule so that the files can be loaded from that location. This rule also allows locally hosted fonts to be added using a relative file path instead of a web URL.</p>
+          <h3>Links and Buttons</h3> 
+            <h4>Link States</h4>
+              <p>In a browser, links have four main states:</p>
+              <ul>
+                <li>Normal (Not Clicked)</li>
+                <li>Hover <code>:hover</code></li>
+                <li>Active (Clicked) <code>:active</code></li>
+                <li>Visited <code>:visted</code></li>
+              </ul>
+            <h4>Button Skeuomorphic Styling</h4>
+              <p>A <code>&lt;button&gt;</code> element can incorporate skeuomorphic styling for a realistic 3D appearance.<br> When pressing the button, a texture change may occur to make the button appear to flatten and pop back up when released.</p>
+            <h4>Button Flat Styling</h4>
+              <p>A <code>&lt;button&gt;</code> element can incorporate flat styling for a simple 2D effect.<br> When pressing the button, a color change may occur as a signifier that the button has been pressed.</p>
+      </article>
+    </section>
+  </body>
+
+</html>
